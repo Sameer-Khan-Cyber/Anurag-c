@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_enquiry"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="12dp"
+    android:layout_marginVertical="6dp"
+    android:background="#FFFFFF"
+    android:elevation="2dp"
+    android:orientation="vertical"
+    android:padding="14dp">
+
+    <!-- Title and Status Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_enquiry_pg_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Greenfield Luxury PG"
+            android:textColor="#0F172A"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:ellipsize="end" />
+
+        <TextView
+            android:id="@+id/tv_enquiry_status_badge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#D1FAE5"
+            android:textColor="#059669"
+            android:text="Replied"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:paddingHorizontal="6dp"
+            android:paddingVertical="3dp" />
+    </LinearLayout>
+
+    <!-- Message -->
+    <TextView
+        android:id="@+id/tv_enquiry_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Is double sharing room available this month?"
+        android:textColor="#334155"
+        android:textSize="13sp" />
+
+    <!-- Owner Reply Box -->
+    <LinearLayout
+        android:id="@+id/layout_owner_reply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="#DBEAFE"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/tv_owner_reply_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Owner Reply:"
+            android:textColor="#1E40AF"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_owner_reply_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Yes, double sharing is available in Block B."
+            android:textColor="#1E3A8A"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <!-- Timestamp and Contact Footer -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/tv_enquiry_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="Owner: Rohit Sharma"
+            android:textColor="#64748B"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tv_enquiry_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="2026-10-28"
+            android:textColor="#64748B"
+            android:textSize="11sp" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,6 @@
+{
+  "name": "FIND MY PG",
+  "description": "Paying Guest discovery and listing management system with interactive search, owner management, enquiries, and admin approvals.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
